@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Trust, but Verify
 
@@ -186,4 +186,3 @@ else:
 And that's it. My first little pinky toe into the bottomless ocean that is reliability automation. I am proud of myself for the accomplishment, while still cognizant that I have a lot of work to do, not only on this script (which I am well aware is terrible) but on my script design in general, software design principles, and of course, other tasks I can give this same style of treatment.
 
 This script took me about 12 hours to develop, and is the first really serious coding/scripting I have done since C++ and Java for non-CS majors when I was in college. I am not concerned about the time investment, because speed is not the goal. The purpose is to more reliably interface with the network, and that is what this feeble attempt at a script, in it's own small way, tries to do.
-
