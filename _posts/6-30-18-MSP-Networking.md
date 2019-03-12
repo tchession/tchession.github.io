@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Networking in a Managed Services World
 
@@ -27,4 +27,3 @@ The reality of the situation is that most of our clients do not really *need* th
 #### Conclusion
 
 This was a bit of a rambly post - I am still working on an outlining process for these posts, but I wanted to get my thoughts out on networking focus in an MSP environment. Are any of you working for MSPs out there? DO you have specialized staff for these types of escalations? How do you manage design in an environment where cutting quotes by a hundred dollars is a huge win?
-
