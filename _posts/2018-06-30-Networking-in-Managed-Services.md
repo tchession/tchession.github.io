@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-# Networking in a Managed Services World
+### The Scene
 
 My current employer is a managed services provider (MSP) in the southeastern USA. Our target market is the SMB space, with most of our clients having employee counts in the 50-500 employee range. My particular role as *the* network engineer in the company is threefold:
 - Management of the network infrastructure of our private cloud environment
