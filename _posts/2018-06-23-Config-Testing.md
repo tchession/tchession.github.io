@@ -1,15 +1,15 @@
 ---
 published: true
 ---
-# Trust, but Verify
+### Trust, but Verify
 
 I wrote about in a blog post a couple of weeks ago about my failed attempts to implement network automation in the past. A large part of those failures were my attempts to 'boil the ocean', or do too much too fast, vastly exceeding my skillset, getting frustrated, and giving up. This time around, I am being mindful to not creep the scope of my automation efforts too fast beyond my skills, and to aim for low hanging fruit as much as possible. Today, I am going to talk about my first success in this area, but first, some background about why I chose the task I did.
 
-## Using Automation to Enforce Reliability
+#### Using Automation to Enforce Reliability
 
 Matt Oswalt has been writing and speaking a lot recently about the concept of '*Network Reliability Engineering*', a networking-centric counterpart to the more systems and application oriented idea of Site Reliability Engineering. A critical component to this concept of NRE is that the purpose of automation is not and should not be sold/advocated as speed. I can tell you from personal experience that if you are looking to get into programming and automation for your network in the hopes of saving yourself *time*, you are in the wrong place. The purpose of automation is to perform tasks **correctly and reliably**. Changes to the network, by nature of the reliance that the business places on modern networks, necessarily have a massive blast radius, and NRE focuses on implementing automation that not only performs tasks, but tests that those tasks were performed correctly and that the requested service is being provided to your customer. Focusing on network delivery in this way will, by nature of it's reliable delivery, increase the speed of network service provisioning through the minimization of outages and risks.
 
-## Eating a Horse, One Bite at a time
+#### Eating a Horse, One Bite at a time
 
 In order to identify what tasks I can target for a quick and valuable automation implementation, I have spent the past month or so breaking down the most common network configuration tasks that I perform to as close to their primitive components as possible. I did this using a technique I learned while a system administrator at IBM, called *the Five Whys*. While it is usually a troubleshooting technique, it's purpose is really to help you mentally break down a problem or task into it's components. The idea is that you take any given problem or task, then ask the question 'Why?' Answer that question, then ask 'Why?' again. Repeat five times, and you will typically arrive at your root cause/primitive tasks. In drilling the root cause of each particular problem down until you reach the true cause of the issue, you can better drive problem identification and remediation.
 
@@ -31,7 +31,7 @@ It is important at this point to note that I am **not** performing any actual fi
 
 The final feature that I *did* want to implement was an automated test to verify some of the steps. I am currently only testing to verify that the IP address is present in the Netflow IP group, but again, this gets the script out the door and leaves room for additional iteration, such as adding tests to verify 200 OK from the Netbox API, and later on, rules to verify the firewall rule is applied and does what it says it does.
 
-## The Nitty-Gritty
+#### The Nitty-Gritty
 
 Time to take a tour through the script. I am well aware that this code is very bad. There is little to no error detection, there are huge sections that could easily be spun out to functions to provide some modularity, and it is in general all over the place. My goal was not to write the sexiest or most Pythonic code, but to write something that I can use to get work done today, while giving me something to iterate upon.
 
