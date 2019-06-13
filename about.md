@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Some information about me!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am a network engineer working for a MSP in the southeastern USA. This blog documents my continued learning, thoughts on the industry, and other assorted errata.
 
 ### Contact me
 
